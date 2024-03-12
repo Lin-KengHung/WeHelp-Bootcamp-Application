@@ -160,6 +160,15 @@ body main section.video iframe {
     justify-content: space-around;
     width: 100vw;
   }
+  body main section.introduction h3 {
+    width: 100%;
+  }
+  body main section.introduction div {
+    width: 100%;
+  }
+  body main section.question div {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   body main section.video {
