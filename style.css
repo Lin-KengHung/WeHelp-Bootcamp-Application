@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.1s ease;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+body img.background {
+  position: fixed;
+  z-index: -2;
+  bottom: 0;
+  min-height: 100vh;
+  width: 100%;
+}
+body header {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
+body header section.title {
+  display: flex;
+  flex: 5 1 400px;
+  align-items: center;
+}
+body header section.title img.logo {
+  width: 60px;
+}
+body header section.title h1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.8rem;
+  padding-left: 1rem;
+}
+body header nav {
+  flex: 2 1 200px;
+}
+body header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+body header nav ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+body header nav ul li a:hover {
+  font-weight: bold;
+}
+body main section.introduction {
+  margin: 2.5rem 0rem;
+  width: 100%;
+  padding: 0rem 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main section.introduction h3 {
+  width: 85%;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+}
+body main section.introduction div {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1.5rem;
+  width: 85%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+body main section.introduction div img {
+  display: flex;
+  width: 250px;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0.1rem;
+}
+body main section.introduction div img:hover {
+  border: 2px solid white;
+}
+body main section.introduction div p {
+  padding: 1rem 2rem;
+  flex: 1 1 60%;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+body main section.question {
+  margin: 2.5rem 0rem;
+  width: 100%;
+  padding: 0rem 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main section.question div {
+  background-color: rgba(255, 255, 255, 0.85);
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+}
+body main section.question div:hover {
+  border: 2px solid white;
+}
+body main section.question div h3 {
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+}
+body main section.question div p {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+body main section.video {
+  margin: 2.5rem 0rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding-bottom: 45%;
+  z-index: 1;
+}
+body main section.video iframe {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+}
+
+@media screen and (max-width: 1000px) {
+  body header {
+    background-color: rgba(255, 255, 255, 0.5);
+    flex-direction: column;
+    align-items: center;
+  }
+  body header section.title {
+    flex: 1 1 100px;
+  }
+  body header nav {
+    flex: 1 1 50px;
+  }
+  body header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body main section.video {
+    padding-bottom: 32.625%;
+  }
+  body main section.video iframe {
+    width: 58%;
+  }
+}/*# sourceMappingURL=style.css.map */
